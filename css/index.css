@@ -1,0 +1,968 @@
+:root {
+  --white: #fff;
+  --black: #222;
+  --pink: #f60091;
+  --grey: #444;
+  --grey2: #959595;
+  --grey-alt: #d1e2e9;
+  --yellow: #ffd800;
+  --green: #59b210;
+  --unpeugris: #ABB2B9;
+  --grisfonce: #2C3E50;
+  --grisclair: #EAECEE;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--black);
+  background-color: white;
+  z-index: -1;
+  max-height: 50%;
+}
+li{
+	list-style-type: none;
+	font-size: 1.8rem;
+}
+a{
+	text-decoration: none;
+	color: var(--white);
+}
+a:hover{
+	transition: 0.3s all;
+	color: red;
+}
+.carrevertical{
+	display: none;
+}
+
+.fermeture{
+	display: none;
+}
+
+.identifier{
+	background-color: #1B4F72;
+	display: flex;
+	font-size: 1.5rem;
+}
+.inscrire{
+	left: 30%;
+	position: relative;
+}
+
+.reinscrire{
+	left: 40%;
+	position: relative;
+}
+
+.connecter{
+  left: 48%;
+  position: relative;
+}
+
+
+.entete{
+	background-color: /*#99A3A4*/ #3498DB;
+	height: 70px;
+}
+
+.titre h3{
+	color: white;
+	font-size: 2rem;
+	top:26px;
+	position: relative;
+}
+
+
+.bar{
+	display: none;
+}
+
+.navigation ul{
+	display: flex;
+}
+
+.navigation li a{
+	position: relative;
+	left: 50rem;
+	font-size: 1.8rem;
+	color: white;
+}
+.navigation li a:hover{
+	transition: 0.3s all;
+	color: red;
+}
+.lien1{
+	position: relative;
+	left: -20rem;
+}
+
+.lien2{
+	position: relative;
+	left: -14rem;
+}
+
+.lien3{
+	position: relative;
+	left: -8rem;
+}
+
+.lien4{
+	position: relative;
+	left: -3rem;
+}
+
+.lien5{
+	position: relative;
+	left: 0rem;
+}
+.recherche{
+	visibility: visible;
+}
+
+.rec{
+	position: relative;
+	top: -2.78rem;
+	left: 109rem;
+	height: 3rem;
+	width: 30rem;
+}
+
+.env{
+	position: relative;
+	top: -2.78rem;
+	left: 109rem;
+	height: 3rem;
+	width: 10rem;
+	cursor: pointer;
+}
+
+.env:hover{
+	background-color: green;
+	color: white;
+	animation:  1s ease-in-out infinite;
+}
+/*Deroulement des infos*/
+
+/* Hero Area */
+.hero,
+.glide__hero,
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.banner img {
+  position: absolute;
+  bottom: 0;
+}
+
+.banner img.special_01 {
+  width: 75rem;
+  right: -5%;
+  top: 20%;
+}
+.banner img.special_02 {
+  width: 80rem;
+  right: -10%;
+}
+.banner img.special_03 {
+  width: 80rem;
+  right: -10%;
+  top: 10%;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(25%, -50%);
+}
+
+.banner-content span {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.banner-content h3 {
+  font-weight: 400;
+  color: black;
+  margin-bottom: 2rem;
+  margin-right: 110rem;
+  font-size: 1.8rem;
+}
+
+.glide__arrows {
+  /* position: absolute; */
+  top: 50%;
+}
+
+.glide__arrow {
+  position: absolute;
+  top: 50%;
+  background-color: #555;
+  border: 1px solid var(--black);
+  outline: none;
+  padding: 1.3rem 1.5rem;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: var(--white);
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.glide:hover .glide__arrow {
+  visibility: visible;
+  opacity: 1;
+}
+
+.glide__arrow:hover {
+  color: var(--black);
+  background-color: transparent;
+}
+
+.glide__arrow--left {
+  left: 5%;
+}
+
+.glide__arrow--right {
+  right: 5%;
+}
+
+
+@media only screen and (max-width: 1260px) {
+  body{
+    background-color: blue;
+  }
+  .hero,
+  .glide__hero,
+  .banner {
+    height: 90vh;
+  }
+
+  .banner-content h1{
+    margin-top: -30rem;
+  }
+  .banner-content h3{
+    margin-right: 40rem;
+    font-size: 1.7rem;
+  }
+
+  .banner img.special_01 {
+    width: 60rem;
+    margin-top: 10rem;
+    margin-right: 40rem;
+  }
+  .banner img.special_02 {
+    width: 70rem;
+    margin-right: 40rem;
+  }
+  .banner img.special_03 {
+    width: 70rem;
+    margin-top: 10rem;
+    margin-right: 30rem;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  
+  .banner-content {
+    width: 60%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .banner img.special_01 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50rem;
+  }
+
+  .banner img.special_02 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50rem;
+  }
+  .banner img.special_03 {
+    left: 55%;
+    transform: translateX(-50%);
+    width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-content {
+    width: 90%;
+  }
+
+  .banner-content h1{
+    margin-top: -20rem;
+  }
+  .banner-content h3{
+     margin-right: 0rem;
+     font-size: 1.4rem;
+  }
+  .banner img{
+    margin-top: -8rem;
+  }
+
+  .banner img.special_01{
+    width: 100%;
+    top: 10rem;
+  }
+
+  .banner img.special_02{
+    width: 100%;
+  }
+
+  .banner img.special_03{
+    width: 100%;
+    top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+ 
+  .banner-content h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .banner-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+  }
+
+  .banner img.special_01{
+    width: 100%;
+    top: 25rem;
+  }
+
+  .banner img.special_02{
+    width: 100%;
+  }
+
+  .banner img.special_03{
+    width: 100%;
+    top: 25rem;
+  }
+
+}
+
+.contenu .titre{
+  color: black;
+  text-align: center;
+  font-style: italic;
+  /*border: 1px solid blue;
+  border-radius: 1rem;*/
+}
+
+.contenu .classe-examen{
+  position: relative;
+  /*top: 5rem;*/
+}
+.examen{
+  height: 60rem;
+  width: 31%;
+  position: absolute;
+  top: 93rem;
+  left: 0.5rem;
+  border: 1px solid blue;
+  border-radius: 2rem;
+  background: url(livres.jpg);
+  background-size: cover;
+  /*z-index: 1000;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+}
+
+.examen:hover{
+  transform: scale(1.03);
+  z-index: 1;
+  transition: all 400ms linear;
+}
+
+
+
+
+.brevet{
+  height: 60rem;
+  width: 31%;
+  position: absolute;
+  top: 93rem;
+  left: 50rem;
+  border: 1px solid blue;
+  border-radius: 2rem;
+  background: url(livres.jpg);
+  background-size: cover;
+  /*z-index: 1000;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+}
+
+.brevet:hover{
+  transform: scale(1.03);
+  z-index: 1;
+  transition: all 400ms linear;
+}
+
+.bac{
+  height: 60rem;
+  width: 33%;
+  position: absolute;
+  top: 93rem;
+  left: 100rem;
+  border: 1px solid blue;
+  border-radius: 2rem;
+  background: url(livres.jpg);
+  background-size: cover;
+  /*z-index: 1000;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+}
+
+.bac:hover{
+  transform: scale(1.03);
+  z-index: 1;
+  transition: all 400ms linear;
+}
+.examen .text{
+  /*max-height: 30rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-x: initial;*/
+  text-align: center;
+  position: relative;
+  top: 12rem;
+}
+
+.brevet .text{
+  /*max-height: 30rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-x: initial;*/
+  text-align: center;
+  position: relative;
+  top: 12rem;
+}
+
+.bac .text{
+  /*max-height: 30rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-x: initial;*/
+  text-align: center;
+  position: relative;
+  top: 12rem;
+}
+
+.text p{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.voirplus{
+  height: 5rem;
+  width: 10rem;
+  cursor: pointer;
+  border:1px solid blue;
+  background-color: white;
+}
+
+.voirplus:hover{
+  background-color: blue;
+  color: white;
+}
+
+.formation{
+  position: absolute;
+  top: 160rem;
+}
+
+.formation .titre{
+  position: relative;
+  bottom: 2rem;
+}
+
+.form{
+  background: url(math.jpg);
+  background-size: cover;
+  z-index: 1;
+  background-position: top center;
+}
+
+.contenu-formation h1{
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+}
+.contenu-formation h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.affichage-service{
+  position: relative;
+  top: -85rem;
+}
+
+.affichage-service .titre{
+  position: relative;
+  top: 245rem;
+}
+
+.service-formation{
+  position: absolute;
+  top: 255rem;
+  left: 1rem;
+  height: 20rem;
+  width: 40rem;
+  z-index: 1000;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 2rem;
+}
+
+.service-formation h2{
+  text-align: center;
+  position: relative;
+  top: 8rem;
+}
+
+.service-education{
+  position: absolute;
+  top: 255rem;
+  left: 60rem;
+  height: 20rem;
+  width: 40rem;
+  z-index: 1000;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 2rem;
+}
+
+.service-education h2{
+  text-align: center;
+  position: relative;
+  top: 8rem;
+}
+
+.service-loisir{
+  position: absolute;
+  top: 255rem;
+  left: 110rem;
+  height: 20rem;
+  width: 40rem;
+  z-index: 1000;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 2rem;
+}
+
+.service-loisir h2{
+  text-align: center;
+  position: relative;
+  top: 8rem;
+}
+
+.avis{
+  position: absolute;
+  width: 100%;
+  top: 2rem;
+  top: 289rem;
+}
+
+.glide__track{
+
+}
+.avis .titre{
+  position: relative;
+  bottom: 4rem;
+}
+
+.image-avis img{
+  position: relative;
+  width: 48%;
+}
+
+.image-avis h2{
+  position: relative;
+  left: 70%;
+  right: 0%;
+  top: -43rem;
+}
+
+.image-avis h3{
+  position: relative;
+  left: 50%;
+  width: 50%;
+  top: -36rem;
+}
+
+.visite-titre{
+  position: absolute;
+  top: 355rem;
+  left: 47%;
+}
+
+.visite{
+  position: absolute;
+  top: 365rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 55rem;
+  width: 99%;
+  /*border: 1px solid blue;
+  border-radius: 1rem;*/
+}
+
+.visite video{
+  height: auto;
+  width: 100%;
+  background-size: cover;
+}
+
+.haut i{
+  position: relative;
+  left: 95%;
+  /*bottom: 10%;*/ 
+  padding: 0.8rem 1.4rem;
+  border-radius: 1rem;
+  visibility: hidden;
+  cursor: pointer;
+  transition: 0.1s;
+  animation: bounce 2s ease-in-out infinite;
+  color: blue;
+  border: 2px solid blue;
+}
+
+.pieddepage{
+  background-color: /*#99A3A4*/ #3498DB;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 35rem;
+  bottom: 0rem;
+  top: 460rem;
+}
+
+.sous-titre-lien-gauche{
+  color: white;
+  position: relative;
+  /*left: 0rem;*/
+  font-style: italic;
+  border-bottom: 1px solid white;
+  width: 12rem;
+  font-weight: bold;
+
+}
+
+
+.pieddepage li a{
+  font-size: 2rem;
+  color: white;
+}
+
+.pieddepage li a:hover{
+  transition: 0.3s all;
+  color: red;
+}
+
+
+.liendegauche{
+  position: relative;
+  padding: 0rem;
+  width: 25%;
+  margin: 5rem;
+  left: 8rem;
+}
+
+.liendegauche li a{
+  position: relative;
+  top: 1.5rem;
+}
+
+.sous-titre-lien-milieu{
+  color: white;
+  position: relative;
+  /*left: 0rem;*/
+  font-style: italic;
+  width: 20rem;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+
+.liendumilieu{
+  position: relative;
+  padding: 0rem;
+  width: 25%;
+  margin: 5rem;
+  left: 1rem;
+}
+
+.liendumilieu li a{
+  position: relative;
+  top: 1.5rem;
+}
+
+.sous-titre-lien-milieu-2{
+  color: white;
+  position: relative;
+  /*left: 0rem;*/
+  font-style: italic;
+  width: 20rem;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+
+.groupe2desliensdumilieu{
+  position: relative;
+  padding: 0rem;
+  width: 20%;
+  margin: 5rem;
+  left: 1rem;
+}
+
+.groupe2desliensdumilieu li a{
+  position: relative;
+  top: 1.5rem;
+}
+
+
+.sous-titre-lien-droite{
+  color: white;
+  position: relative;
+  /*left: 0rem;*/
+  font-style: italic;
+  width: 15rem;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+
+.liendedroite{
+  position: relative;
+  padding: 0rem;
+  /*width: 20%;*/
+  margin: 5rem;
+  left: 1rem;
+}
+
+.liendedroite li a{
+  position: relative;
+  top: 1.5rem;
+}
+
+.devise{
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  display: flex;
+  margin: 3rem;
+}
+
+.devise .travail{
+  width: 10rem;
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.devise .justice{
+  width: 10rem;
+  color: yellow;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.devise .solidarite{
+  color: green;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.copyright{
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  color: white;
+}
+
+.copyright i{
+  color: red;
+}
+
+
+@media only screen and (max-width: 768px){
+  body{
+    background-color: red;
+  }
+  .inscrire{
+  left: 15%;
+  position: relative;
+}
+
+.connecter{
+  left: 25%;
+  position: relative;
+}
+
+
+
+.bar{
+  display: block;
+  color: white;
+  cursor: pointer;
+}
+
+.fa-bars{
+  font-size: 2.5rem;
+  top: -1rem;
+  position: relative;
+  left: 95%;
+}
+
+.rec{
+  position: absolute;
+  top: 5rem;
+  left: 20rem;
+  height: 3rem;
+  width: 30rem;
+}
+
+.env{
+  position: absolute;
+  top: 5rem;
+  left: 50rem;
+  height: 3rem;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.env:hover{
+  background-color: green;
+  color: white;
+  animation:  1s ease-in-out infinite;
+}
+
+.navigation ul{
+  display: block;
+  visibility: hidden;
+}
+.navigation li{
+  z-index: 100000000000;
+}
+
+.navigation li:hover{
+  /*transform: translateX(10px);
+  transform-origin: left;
+  transform-style: preserve-3d;*/
+  border-bottom: 1px solid white;
+}
+.lien1{
+  padding: 2rem;
+  left: -65%;
+}
+.lien2{
+  padding: 2rem;
+  left: -65%;
+}
+.lien3{
+  padding: 2rem;
+  left: -65%;
+}
+.lien4{
+  padding: 2rem;
+  left: -65%;
+}
+
+.lien5{
+  padding: 2rem;
+  left: -65%;
+}
+
+
+.carrevertical{
+  display: none;
+  position: absolute;
+  background-color: #3498DB;
+  width: 45%;
+  height: 90%;
+  z-index: 10000;
+}
+.titreducarrevertical h3{
+  color: white;
+  font-size: 2rem;
+  top:26px;
+  position: relative;
+  border-bottom: 2px solid white;
+}
+
+.fermeture{
+  display: block;
+  position: relative;
+  color: white;
+  left: 90%;
+  cursor: pointer;
+  font-size: 2.2rem;
+  top: -0.8rem;
+}
+
+.pieddepage {
+  width: 100%;
+  position: absolute;
+  top: 26.2rem;
+}
+
+}
+
+@media only screen and (max-width: 568px){
+  body{
+    background-color: white;
+  }
+  .rec{
+    width: 16rem;
+    left: 14rem;
+  }
+  .env{
+    width: 8rem;
+    left: 30rem;
+  }
+
+  .bar i{
+    top: -0.7rem;
+    left: 92%;
+  }
+
+  .nav li a{
+    left:35rem;
+  }
+  .carrevertical{
+  width: 60%;
+}
+
+}

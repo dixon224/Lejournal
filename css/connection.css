@@ -1,0 +1,142 @@
+body{
+	background: linear-gradient(0deg, rgba(3,52,243,1) 0%, rgba(231,231,231,0) 53%);
+	height: 45.2rem;
+}
+.contenu{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.barre{
+	display: flex;
+	justify-content: space-between;
+	background: linear-gradient(0deg, rgba(73,0,227,1) 100%, rgba(229,234,237,1) 100%);
+	font-size: 1.4rem;
+	color: white;
+	margin: -0.5rem;
+}
+
+.barre h3{
+	margin-right: 43rem;
+}
+
+.barre button{
+	width: 10rem;
+	height: 3rem;
+	margin-top: 1rem;
+	background: linear-gradient(0deg, rgba(73,0,227,1) 100%, rgba(229,234,237,1) 100%);
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.formulaire{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 4rem;
+}
+
+.formulaire h3{
+	font-style: italic;
+	font-size: 35px;
+}
+
+form input{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 25rem;
+	height: 3rem;
+	border-width: thin;
+	border-radius: 8px;
+}
+
+input::placeholder{
+	color:rgb(0, 0, 0);
+	font-size: 20px;
+}
+form .envoyer{
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+form .envoyer:hover{
+	background: linear-gradient(0deg, rgba(73,0,227,1) 100%, rgba(229,234,237,1) 100%);
+	color: white;
+	border: none;
+}
+
+.message-reussite{
+	position: absolute;
+	background-color: green;
+	height: 8rem;
+	width: 35rem;
+	z-index: 1000;
+	margin-left: 30rem;
+	border-radius: 15px;
+	text-align: center;
+	color: white;
+	font-size: 22px;
+}
+
+.message-reussite i{
+	position: absolute;
+	left: 33rem;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.message-echec{
+	position: absolute;
+	background-color: red;
+	height: 8rem;
+	width: 35rem;
+	z-index: 1000;
+	margin-left: 30rem;
+	border-radius: 15px;
+	text-align: center;
+	color: white;
+	font-size: 22px;
+}
+
+.message-echec i{
+	position: absolute;
+	left: 33rem;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.formulaire p{
+	font-size: 25px;
+}
+
+.formulaire a{
+	color: white;
+	border-bottom: ;
+}
+
+@media only screen and (max-width: 768px){
+	body{
+		height: 63rem;
+	}
+	.barre h3{
+	margin-right: 18rem;
+}
+
+.formulaire{
+	margin-top: 10rem;
+}
+
+.message-reussite{
+margin-left: 8rem;
+}
+
+.message-echec{
+margin-left: 8rem;
+}
+}
